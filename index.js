@@ -56,7 +56,7 @@ app.get('/topstuk', async (req, res) => {
         const colli = client.db('full-projects-3').collection('topstukken')
 
         const query = {
-            idnc: req.query.id
+            tid: req.query.id
         };
 
         const nc = await colli.findOne(query);
